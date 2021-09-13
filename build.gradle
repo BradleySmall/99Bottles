@@ -1,0 +1,30 @@
+plugins {
+    id 'groovy'
+    id 'java'
+
+//    apply plugin: 'application'
+}
+
+// application {
+//     mainClassName = "com.small.99bottles.9Bottles"
+// }
+
+group 'com.small.99bottles'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.codehaus.groovy:groovy-all:3.0.8'
+    testImplementation 'org.spockframework:spock-core:2.0-groovy-3.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    implementation 'icu4j:icu4j:2.6.1'
+    implementation 'org.apache.commons:commons-lang3:3.1'
+}
+
+test {
+    useJUnitPlatform()
+}
