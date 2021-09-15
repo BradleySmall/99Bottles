@@ -1,3 +1,5 @@
+package com.small.song99bottles;
+
 import com.ibm.icu.text.NumberFormat;
 import com.ibm.icu.text.RuleBasedNumberFormat;
 import org.apache.commons.lang3.text.WordUtils;
